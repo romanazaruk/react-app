@@ -1,80 +1,117 @@
-.App{
-    background-color: #eeeeee;
-    min-height: 40rem;
-    max-width: 120rem;
-
+.App {
+  background-color: #eeeeee;
+  min-height: 40rem;
+  max-width: 120rem;
+  font-family: sans-serif;
 }
-.intro{
-    padding-top:10rem;
+.all{
+    width:90rem;
+    margin-left:50px;
+}
+.intro {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.description {
+  color: #00c853;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+}
+
+.progress_dots {
+  flex: 1;
+  border-width: 8px;
+  border-style: dotted none none none;
+  color: #bdbdbd;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  border: 2px solid;
+  border-color: #bdbdbd;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #eeeeee;
+  margin: 0 20px;
+}
+.text-description1 {
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first_name {
+  margin-bottom: 10px;
+}
+.first_date {
+  margin-top: 0;
+}
+
+.text-description2 {
+    position: absolute;
     display:flex;
-    justify-content:center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-}
-.description{
-    color: #00c853;
+    width: 200px;
+    margin-left:-60px;
+  }
+
+.second_name {
+  margin-bottom: 10px;
 }
 
-.progress{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    
+.address {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
-.dot_info {
-    padding-top:2.5rem;
+.state {
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.text-description3 {
+    position: absolute;
     display:flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    width:200px;
+    margin-left:-60px;
+  }
+.third_name {
+  margin-bottom: 10px;
+}
+.office {
+  margin-top: 0;
+}
+
+.text-description4 {
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:200px;
+    margin-left: -60px;
   }
 
-  .dotmini {
-    height: 5px;
-    width: 5px;
-    border: 1px;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #bdbdbd;
-  }
-  .dot {
-    height: 20px;
-    width: 20px;
-    border: 2px solid;
-    border-color: #bdbdbd;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #eeeeee;
-    margin-top: 1.5rem;
-  }
-
-.info_first{
-    padding-top: 0.5rem;
-    font-size: 1.3rem;
-    
+.fourth_name {
+  margin-bottom: 10px;
 }
-.info_first_date{
-    padding-top: 0.5rem;
-}
-
-.info_second{
-    padding-top: 0.5rem;
-    font-size: 1.3rem;
-}
-.info_address{
-    padding-top: 0.5rem;
-}
-
-.info_state{
-    padding-top: 0.5rem;
-}
-.info_third{
-    padding-top: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.info_office{
-    padding-top: 0.5rem;
+.dot_container{
+    position:relative;
 }
