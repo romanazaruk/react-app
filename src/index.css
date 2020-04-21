@@ -1,19 +1,13 @@
 .App {
   background-color: #eeeeee;
   min-height: 40rem;
-  max-width: 120rem;
+  max-width: 100%;
   font-family: sans-serif;
 }
-.all{
-    width:90rem;
-    margin-left:50px;
-}
+
 .intro {
+  text-align: center;
   padding-top: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .description {
   color: #00c853;
@@ -21,97 +15,51 @@
 
 .progress {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 3rem;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .progress_dots {
   flex: 1;
-  border-width: 8px;
-  border-style: dotted none none none;
-  color: #bdbdbd;
+  border-top: 8px dotted #bdbdbd;
 }
 
 .dot {
   height: 30px;
   width: 30px;
-  border: 2px solid;
-  border-color: #bdbdbd;
+  border: 2px solid #bdbdbd;
   border-radius: 50%;
-  display: inline-block;
   background-color: #eeeeee;
-  margin: 0 20px;
+  margin: 10px;
 }
-.text-description1 {
+.text_description {
   position: absolute;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.first_name {
-  margin-bottom: 10px;
-}
-.first_date {
-  margin-top: 0;
+  width: 180px;
+  text-align: center;
+  left: -50px;
 }
 
-.text-description2 {
-    position: absolute;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
+.dot_container {
+  position: relative;
+}
+
+@media (max-width: 968px) {
+  .progress {
     flex-direction: column;
-    width: 200px;
-    margin-left:-60px;
+    min-height: 500px;
+    align-items: flex-start;
+    padding-bottom: 75px;
   }
-
-.second_name {
-  margin-bottom: 10px;
-}
-
-.address {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.state {
-  margin-top: 0px;
-  margin-left: 5px;
-  margin-bottom: 10px;
-}
-
-.text-description3 {
-    position: absolute;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width:200px;
-    margin-left:-60px;
+  .progress_dots {
+    border-left: 3px dashed #bdbdbd;
+    margin-left: 25px;
   }
-.third_name {
-  margin-bottom: 10px;
-}
-.office {
-  margin-top: 0;
-}
-
-.text-description4 {
-    position: absolute;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width:200px;
-    margin-left: -60px;
+  .text_description {
+    text-align: left;
+    left: 80px;
+    top: 0;
   }
-
-.fourth_name {
-  margin-bottom: 10px;
-}
-.dot_container{
-    position:relative;
 }
